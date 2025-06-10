@@ -5,10 +5,18 @@ class CircularQueue {
     int FRONT, REAR, max = 5;
     int queue_array[5];
 
-public:
+    public:
     CircularQueue() {
         FRONT = -1;
         REAR = -1;
     }
+
+    void insert(){
+        int num;
+        cout << "Enter a number: ";
+        cin >> num; 
+        cout << endl;
+    }
+
 
 }
