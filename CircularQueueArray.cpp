@@ -1,13 +1,13 @@
 #include <iostream>
 using namespace std;
 
-class CircularQueue {
+class Queues {
 private:
     int FRONT, REAR, max = 5;
     int queue_array[5];
 
 public:
-    CircularQueue() {
+    Queues() {
         FRONT = -1;
         REAR = -1;
     }
@@ -89,7 +89,7 @@ public:
 };
 
 int main() {
-    CircularQueue q;
+    Queues q;
     char ch;
 
     while (true) {
@@ -102,7 +102,15 @@ int main() {
             cout << "Enter your choice (1-4): ";
             cin >> ch;
             cout << endl;
-        }
-            
-    }
+            switch (ch) {
+                case '1': {
+                    q.insert();
+                    break;
+                }
+                case '2': {
+                    q.remove();
+                    break;
+                }
+                
+    return 0;
 }
