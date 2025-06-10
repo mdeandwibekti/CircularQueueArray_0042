@@ -118,7 +118,13 @@ int main() {
                 case '4': {
                     return 0;
                 }
+                default: {
+                    cout << "Invalid choice. Please try again.\n";
+                    break;
+                }
             }
+        } catch (const exception& e) {
+            cout << "Check for the value entered." << endl;
         }
     }        
     return 0;
