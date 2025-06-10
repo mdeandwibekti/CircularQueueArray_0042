@@ -2,10 +2,11 @@
 using namespace std;
 
 class CircularQueue {
+private:
     int FRONT, REAR, max = 5;
     int queue_array[5];
 
-    public:
+public:
     CircularQueue() {
         FRONT = -1;
         REAR = -1;
@@ -86,3 +87,22 @@ class CircularQueue {
         }  
     }
 };
+
+int main() {
+    CircularQueue q;
+    char ch;
+
+    while (true) {
+        try {
+            cout << "Menu" << endl;
+            cout << "1. Insert operation" << endl;
+            cout << "2. Delete operation" << endl;
+            cout << "3. Display values" << endl;
+            cout << "4. Exit" << endl;
+            cout << "Enter your choice (1-4): ";
+            cin >> ch;
+            cout << endl;
+        }
+            
+    }
+}
